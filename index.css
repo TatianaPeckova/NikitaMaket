@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header-section {
+  max-width: 320px;
+  max-height: 83px;
+  margin: 0px auto;
+}
+
+.header__list {
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+
+.header__listItem {
+  list-style-type: none;
+}
+
+.btnLogo {
+  position: relative;
+}
+
+.btnLogo::after {
+  content: "";
+  background: rgb(234, 234, 234);
+  width: 2px;
+  height: 32px;
+  right: -17px;
+  top: -30px;
+  position: absolute;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo {
+  width: 96.55px;
+  height: 50.81px;
+}
+
+img[hidden] {
+  display: none;
+  @media (min-width: 321px) {
+    display: flex;
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+@media (min-width: 321px) {
+  .header-section {
+    max-width: 720px;
+    max-height: 88px;
+    margin: 0px auto;
+  }
+
+  .log {
+    margin-right: 248px;
+  }
+  .btnLogo::after {
+    display: none;
+  }
+
+  .btnBurger {
+    position: relative;
+  }
+
+  .btnBurger::after {
+    content: "";
+    background: rgb(234, 234, 234);
+    width: 2px;
+    height: 32px;
+    right: -14px;
+
+    top: -20px;
+    position: absolute;
+  }
+
+  .btnTools {
+    position: relative;
+  }
+
+  .btnTools::after {
+    content: "";
+    background: rgb(234, 234, 234);
+    width: 2px;
+    height: 32px;
+    right: -14px;
+    top: -20px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-section {
+    max-width: 1096px;
+    max-height: 130px;
+    margin: 0px auto;
+  }
+
+  .btnBurger::after {
+    display: none;
+  }
+
+  .btnTools::after {
+    display: none;
+  }
+}

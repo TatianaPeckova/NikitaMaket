@@ -1,0 +1,5 @@
+@media screen (max-width: 321px) {
+  .header__list {
+    display: block;
+  }
+}
