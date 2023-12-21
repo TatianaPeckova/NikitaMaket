@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+/*header*/
 
 .header-section {
   max-width: 320px;
@@ -12,7 +13,7 @@
 .header__list {
   display: flex;
   margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 19px;
   margin-top: 16px;
   margin-bottom: 16px;
   justify-content: space-between;
@@ -53,6 +54,15 @@ img[hidden] {
   }
   @media (min-width: 769px) {
     display: none;
+  }
+}
+
+h1[hidden],
+div[hidden],
+ul[hidden] {
+  display: none;
+  @media (min-width: 769px) {
+    display: flex;
   }
 }
 
@@ -102,9 +112,14 @@ img[hidden] {
 
 @media (min-width: 769px) {
   .header-section {
-    max-width: 1096px;
+    max-width: 1120px;
     max-height: 130px;
     margin: 0px auto;
+  }
+
+  .header__navigation {
+    margin-right: 30px;
+    margin-left: 33px;
   }
 
   .btnBurger::after {
@@ -114,4 +129,152 @@ img[hidden] {
   .btnTools::after {
     display: none;
   }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__list--hidden {
+    margin-top: 20px;
+    margin-left: 54px;
+    margin-right: 54px;
+    justify-content: space-between;
+  }
+  .header__list2--hidden {
+    margin-left: 54px;
+    font-size: 16px;
+  }
+
+  .header__listItem--hidden,
+  .header__listItem2--hidden {
+    list-style-type: none;
+  }
+
+  .header__listItem2--hidden {
+    margin-top: 34px;
+  }
+
+  .btnHidden {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+
+  .ServicesHidden {
+    font-size: 28px;
+    color: black;
+    margin-top: 52px;
+  }
+
+  .hiddenLink {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgba(126, 126, 130, 1);
+  }
+
+  .hiddenLink:hover {
+    border: solid;
+    border-color: rgb(184, 255, 236);
+    border-radius: 2px;
+    border-width: 2px;
+  }
+
+  .hiddenMainDiv {
+    justify-content: flex-end;
+    margin-top: -35px;
+    gap: 30px;
+  }
+
+  .div1,
+  .div2 {
+    align-self: center;
+    margin-right: 10px;
+  }
+
+  button {
+    display: block;
+    width: 233px;
+    height: 40px;
+    background-color: none;
+    transition: 1s;
+    cursor: pointer;
+  }
+}
+
+/*main*/
+
+.main {
+  max-width: 320px;
+  max-height: 509px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__divName {
+  margin-right: 74px;
+  margin-left: 19px;
+}
+
+.Services {
+  font-size: 28px;
+}
+
+.main__divParagraf {
+  margin-top: 64px;
+  margin-left: 19px;
+}
+
+.main__paragraf {
+  font-size: 14px;
+}
+
+.main__FlipText {
+  display: flex;
+  margin-left: 19px;
+  margin-top: 25px;
+}
+
+.main__divCommRead {
+  margin-left: 14px;
+}
+
+.main__navigation {
+  width: 504px;
+  height: 40px;
+}
+
+.main__list--visible {
+  display: flex;
+}
+
+.main__listItem--visible {
+  margin-top: 34px;
+  margin-left: 16px;
+
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+button {
+  display: block;
+  width: 233px;
+  height: 40px;
+  background-color: none;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.visibleLink:hover {
+  border: solid;
+  border-color: rgb(184, 255, 236);
+  border-radius: 2px;
+  border-width: 2px;
+}
+
+.main__divPic {
+  background-image: url("/imgMobile/PictureCPS.jpg");
+  height: 176px;
+  max-width: 320px;
+  margin-top: 22px;
 }
